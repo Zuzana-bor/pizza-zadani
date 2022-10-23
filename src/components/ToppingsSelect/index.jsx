@@ -14,8 +14,13 @@ const ToppingsSelect = ({ toppings }) => {
   let count = 0;
   select.forEach((topping) => (count += topping.selected));
 
-  // let sum = 0;
-  // select.forEach((topping) => (sum += topping.price));
+  let sum = 0;
+
+  if (toppings.selected) {
+    const sum = (toppings.price += sum);
+  }
+
+  console.log(sum);
 
   return (
     <>
